@@ -1,0 +1,29 @@
+
+<div class="jumbotron">
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<ol class="breadcrumb">
+  <li ng-repeat="category in categorysB" ng-click="cateSubSel(category)" ng-class="{active:isCateSubActive(category)}">{{category.title}}</li>
+  <li class="pull-right"><a href="#" class="glyphicon glyphicon-search"></a></li>
+</ol>
+
+<div class="row">
+  <div ng-repeat="product in products" class="col-xs-3" ng-if="isViewProduct(product)">
+    <a href="#/product/{{product.id}}" class="thumbnail">
+      <img ng-src="{{product.imgSrc}}" alt="125x125">
+    </a>
+    <p>
+      <h6>{{product.name}}</h6>
+      <h6>{{product.price | currency:"&#8361;":0 }}</h6>
+      <h6 class="hidden-xs">{{product.description}}</h6>
+    </p>
+  </div>
+</div>
+
+<ul id="navigation" class="hidden-xs">
+  <li ng-repeat="category in categorysA" ng-click="cateSel(category)" ng-class="{active:isCateActive(category)}">{{category.title}}</li>
+</ul>

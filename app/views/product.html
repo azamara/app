@@ -1,0 +1,69 @@
+<ol id="navText" class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Library</a></li>
+  <li class="active">Data</li>
+</ol>
+
+<div class="row">
+  <div class="col-md-6">
+    <img ng-src="/images/product/a.jpg" alt="125x125" width="300" height="250">
+  </div>
+  <div class="col-md-6">
+    <ul class="productDtailInfo">
+      <li><h4>titlea한글</h4></li>
+      <li>titleb타이틀b</li>
+      <li>price</li>
+      <li>point</li>
+      <li>
+        수량 :
+        <select>
+          <option ng-repeat="i in [1,2,3,4,5,6,7,8,9]" value="{{i}}">{{i}}</option>
+        </select>
+      </li>
+    </ul>
+    <a class="btn btn-success" href="#" role="button">BUY NOW</a>
+    <a class="btn btn-info" href="#" role="button">CART</a>
+    <a class="btn btn-default" href="#" role="button">WISH</a>
+  </div>
+</div>
+
+<div class="row">
+  <div id="productDetailContent" class="productDetailContent">
+    <div class="tabbable">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#1" data-toggle="tab">DETAIL</a></li>
+        <li><a href="#2" data-toggle="tab">REVIEW(0)</a></li>
+        <li><a href="#2" data-toggle="tab">Q&A(0)</a></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="1">
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+          <p>I'm in Section 1.</p>
+        
+
+
+        </div>
+        <div class="tab-pane" id="2">
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p>
+          <p>Howdy, I'm in Section 2.</p><p>Howdy, I'm in Section 2.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
