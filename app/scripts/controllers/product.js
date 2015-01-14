@@ -15,8 +15,5 @@ angular.module('wwwApp')
 ); // end module
 
 $(document).ready(function(){
-  $.get( "http://www.slrclub.com/bbs/zboard.php?id=used_market&category=1", function( data ) {
-    $( "#tab1" ).html( data );
-  });
+  
 });
-w
